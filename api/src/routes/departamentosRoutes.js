@@ -56,29 +56,6 @@ const departamentosRoutes = (app) => {
   })
 }
 
-app.patch(`${base}/departamentos/:id_departamento`, async (req, res) => {
-  const { id_departamento } = req.params
-  const { nome, sigla } = req.body
-
-  if (!id_departamento || (!nome && !sigla)) {
-    res.status(400).json({ message: 'One or more fields are unset' })
-    return
-  }
-
-  try {
-    const query = 'UPDATE DEPARTAMENTOS SET nome = ?, sigla = ? WHERE id_departamento = ?'
-    const [result] = await con.query(query, [nome, sigla, id_departamento])
-
-    res.json(result)
-
-  } catch(e) {
-    res.status(500).json({ message: 'Error on update record', exception: e })
-  }
-
-})
-}
-
-
 
 
 export default departamentosRoutes
