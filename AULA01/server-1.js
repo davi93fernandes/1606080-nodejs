@@ -1,7 +1,7 @@
-const http = require ('http')
+import http from 'http'
 
 http.createServer((req, res) => {
-
-    res.end('Ola mundo! - aula 01 parte 02')
+  
+  res.end('Ola mundo - aula 01 - parte 2 FINAL!')
 
 }).listen(3033)

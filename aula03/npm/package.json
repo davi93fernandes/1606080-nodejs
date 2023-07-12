@@ -2,12 +2,18 @@
   "name": "aula01",
   "version": "1.0.0",
   "description": "batatinha 123",
-  "main": "server-1.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch server-1.js"
+    "start": "node --watch server.js"
   },
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "upper-case": "2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  }
 }

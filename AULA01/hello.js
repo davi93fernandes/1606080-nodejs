@@ -1,3 +1,4 @@
-const nome = 'Davi'
+const nome = 'Cicero'
 
-console.log(`Olá mundo! ${nome}`)
+console.log(`Ola mundo! ${nome}`)
+
